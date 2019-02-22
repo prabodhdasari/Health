@@ -1,0 +1,40 @@
+ 
+    .box input {
+        padding: 10px 0;
+        margin-bottom: 0px;
+    }
+
+    .box input {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        border-bottom: 0px solid grey;
+    }
+
+    .box form div {
+        position: relative;
+    }
+
+    .box form div label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: grey;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+    .box input:focus~label,
+    .box input:valid~label {
+        top: -12px;
+        left: 0;
+        color: #246df8;
+    }
+
+    .box input:focus,
+    .box input:valid {
+        border-bottom: 1px solid #246df8;
+    }
+     
