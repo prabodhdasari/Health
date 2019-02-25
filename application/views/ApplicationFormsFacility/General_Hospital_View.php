@@ -80,7 +80,7 @@ include("includes/header.php");
                                     <label class="col-md-3 col-form-label">Group Details (if any)</label>
                                     <div class="col-md-9 box">
                                         <div class="row ">
-                                        <div class="col-md-12">
+                                         <div class="col-md-12">
                                             <div class="form-group ">
                                                 <input type="text" class="form-control" name="" required="">
                                                 <label> Name</label>
