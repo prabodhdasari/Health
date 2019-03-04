@@ -30,6 +30,9 @@ public function save()
      $data=$this->input->post();
      unset($data['Submit']);
      unset($data['fr']);
+     unset($data['fm']);
+     unset($data['fc']);
+     //`fm`, `fc`
     // var_dump($data);
     $result=$this->db_functions->add('test', $data);
                
@@ -42,15 +45,18 @@ public function addNewOrUpdate()
      $data=$this->input->post();
      unset($data['Submit']);
      unset($data['fr']);
+     unset($data['fm']);
+     unset($data['fc']);
    // var_dump($data);
     // echo $data['fname'];
-    if(!empty($data))
+    if(!empty($data['fname']))
     {
     $result=$this->db_functions->addNewOrUpdate('test','fname', $data['fname'],$data);
     $this->session->set_flashdata('message',$result); 
     //('test', $data);
-    $this->index();
+   
 }
+$this->index();
 
               
 }
