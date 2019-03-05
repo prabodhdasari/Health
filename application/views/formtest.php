@@ -23,7 +23,7 @@
         <?php
 
         echo 
-        form_open('formtest/addNewOrUpdate');
+        form_open('general/addNewOrUpdate');
 
     echo 
 form_label(ucfirst('what is your Name'), 'username');
