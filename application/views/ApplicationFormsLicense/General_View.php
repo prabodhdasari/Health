@@ -325,8 +325,8 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" placeholder="Degree/Certificate/Diploma", class="form-control"';
-                                                    echo form_input('Name_Degree',set_value('Name_Degree'),$opts);
+                                                    $opts = 'type="text", placeholder= "Degree/Certificate/Diploma", class="form-control"';
+                                                    echo form_input('Name_Degree[]',set_value('Name_Degree[]'),$opts);
                                                     ?>
                                                          
                                                 </div>
@@ -334,8 +334,8 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" placeholder="University/Institute", class="form-control"';
-                                                    echo form_input('University',set_value('University'),$opts);
+                                                    $opts = 'type="text", placeholder= "University/Institute", class="form-control"';
+                                                    echo form_input('University[]',set_value('University[]'),$opts);
                                                     ?>
                                                     
                                                 </div>
@@ -343,9 +343,8 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="  Year of
-                                                    passing", class="form-control"';
-                                                    echo form_input('Passing_Year',set_value('Passing_Year'),$opts);
+                                                    $opts = 'type="text", placeholder="  Year of passing", class="form-control"';
+                                                    echo form_input('Passing_Year[]',set_value('Passing_Year[]'),$opts);
                                                     ?>
                                                     
                                                 </div>
@@ -354,7 +353,7 @@
                                                 <div class="form-group">
                                                 <?php 
                                                     $opts = 'type="text", placeholder=" RollNumber", class="form-control"';
-                                                    echo form_input('RollNumber',set_value('RollNumber'),$opts);
+                                                    echo form_input('RollNumber[]',set_value('RollNumber[]'),$opts);
                                                     ?>
                                                     
                                                     <small id="text" class="form-text text-muted">Admission number or
@@ -376,6 +375,62 @@
                                         </div>
 
                                     </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder= "Degree/Certificate/Diploma", class="form-control"';
+                                                    echo form_input('Name_Degree[]',set_value('Name_Degree[]'),$opts);
+                                                    ?>
+                                                         
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder= "University/Institute", class="form-control"';
+                                                    echo form_input('University[]',set_value('University[]'),$opts);
+                                                    ?>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="  Year of passing", class="form-control"';
+                                                    echo form_input('Passing_Year[]',set_value('Passing_Year[]'),$opts);
+                                                    ?>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder=" RollNumber", class="form-control"';
+                                                    echo form_input('RollNumber[]',set_value('RollNumber[]'),$opts);
+                                                    ?>
+                                                    
+                                                    <small id="text" class="form-text text-muted">Admission number or
+                                                        Roll number</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 text-right">
+                                                <div class="add-cv">
+                                                    <input type="file">Upload File<i data-feather="upload-cloud"></i>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class=" col-md-12 dropdown header-top-account login-modals text-right">
+                                            <button title="Title" type="button" data-toggle="modal"
+                                                data-target="#educationModel">+ Add Education</button>
+
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                                 <div id="details" class="row">
