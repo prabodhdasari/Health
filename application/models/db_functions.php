@@ -43,6 +43,21 @@ class db_functions extends CI_Model
         $this->db->delete($tablename);
         }
 
+        public function getByID($tablename,$field,$value){
+          if(!is_numeric($value)){
+            $sql= "select H_ID from " . $tablename . " where ". trim($field). " = '". trim($value) ."'";
+          } else {
+            $sql= "select H_ID from " . $tablename . " where ". trim($field). " = ". trim($value) ;
+          }
+       
+          $q=$this->db->query($sql);
+          $row = $q->row();
+          if(isset($row)){
+            return $row->H_ID;
+          } else {return '';}
+          
+        }
+
         public function getall($tablename){
           $sql="select * from ". $tablename;
           $q=$this->db->query($sql);
