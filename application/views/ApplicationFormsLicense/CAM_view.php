@@ -1,5 +1,5 @@
 <?php
- include("includes/header.php");
+ $this->load->view('includes/header.php');
 ?>
 
   <div class="alice-bg section-padding-bottom">

@@ -72,7 +72,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7CRoboto:300i,400,500" rel="stylesheet">
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.png">
+  <link rel="icon" href="/images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/icon-114x114.png">
@@ -207,16 +207,20 @@
 
   <li class="menu-item dropdown">
     <a title="" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"
-      aria-expanded="false">Doctors</a>
+      aria-expanded="false">Apply-License</a>
     <ul class="dropdown-menu">
-      <li class="menu-item"><a href="candidate.html">Doctors Listing</a></li>
-      <li class="menu-item"><a href="candidate-details.html">Doctors Details</a></li>
+      <li class="menu-item"><a href="General">General</a></li>
+      <li class="menu-item"><a href="Medical_Specialist">Medical Specialist</a></li>
+      <li class="menu-item"><a href="Dental">Dental</a></li>
+      <li class="menu-item"><a href="CAM">Complementary & Alternative Medicine</a></li>
+      <li class="menu-item"><a href="Allied">Allied Health Professional</a></li>
+      <li class="menu-item"><a href="Nurse">Nurse</a></li>
 
     </ul>
   </li>
   <li class="menu-item dropdown">
     <a title="" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"
-      aria-expanded="false">Hospitals</a>
+      aria-expanded="false">Apply-Hospital</a>
     <ul class="dropdown-menu">
       <li class="menu-item"><a href="employer-listing.html">Hosptials Listing</a></li>
       <li class="menu-item"><a href="employer-details.html">Hospital Details</a></li>

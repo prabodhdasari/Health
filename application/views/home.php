@@ -98,6 +98,7 @@
                   </div>
                 </div> -->
                 <?php
+                $this->session->sess_destroy();
                 if($this->session->flashdata('message'))
                 {
                     echo '

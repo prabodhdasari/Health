@@ -1,5 +1,10 @@
 <?php
- include("includes/header.php");
+ //include(base_url(). "includes/header.php");
+ //include("includes/header.php");
+ $this->load->view('includes/header.php');
+ 
+ //include('includes/ErrorNotifications.php');
+// include(base_url()."includes/ErrorNotifications.php");
 ?>
 
 <div class="alice-bg section-padding-bottom">
@@ -585,8 +590,10 @@
 
 
                     <?php
-include("includes/leftmenu.php");
-            ?>
+//include("includes/leftmenu.php");
+$this->load->view('includes/leftmenu.php');
+//include('/includes/leftmenu.php');
+?>
 
                 </div>
             </div>
@@ -621,7 +628,9 @@ include("includes/leftmenu.php");
  
 <!-- Footer -->
 <?php
- include("includes/footer.php");
+ //include("includes/footer.php");
+ //include('includes/footer.php');
+ $this->load->view('includes/footer.php');
 ?>
 <script>
 $(document).ready(function () {

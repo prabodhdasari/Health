@@ -9,33 +9,58 @@ class General extends CI_Controller
         $this->load->helper('form');
         // Session
         $this->load->library('session');  
+
      //   $this->load->model('Pdf', 'pdf');    
     }
     public function index()
     {
+      $this->session->set_userdata('L_Id', 'L5c88dca36a5274.18924309'); 
        // $this->session->set_userdata('page', 'GENERAL LICENSE');
        // $this->load->view('ApplicationFormsLicense\General_View.php');
-       $this->load->view('ApplicationFormsLicense\General_view.php');
+       $data=$this->getData();
+       $this->load->view('ApplicationFormsLicense\General_view.php',$data);
     }
     public function addNewOrUpdate()
     {
-        $email = 'prabodhdasari@gmail.com';
+        $email = $this->session->userdata('email'); //'prabodhdasari@gmail.com';
         $ip_address=$this->input->ip_address();
         //var_dump ($uniq);
        
-       // $H_Id= uniqid('H',true);//Generate Uniq ID     
-        $uniq = $this->db_functions->getById('H_PersonalDetails','email',$email);    
-     
+       // $L_Id= uniqid('H',true);//Generate Uniq ID     
+       // $uniq = $this->db_functions->getById('H_PersonalDetails','email',$email);    
+       $application='General License';
+       $uniq = $this->db_functions->checkForNewApplication($email,$application);
+       var_dump ('First'.$uniq);
         if(empty($uniq)){
           do{
-            $H_Id= uniqid('H',true);//Generate Uniq ID     
-            $uniq = $this->db_functions->getById('H_PersonalDetails','email',$email);     
-          } while(!empty($uniq));
-        } else {$H_Id=$uniq;}
+            $L_Id= uniqid('L',true);//Generate Uniq ID     
+            $ID =$this->db_functions->generateL_ID($L_Id);
+            var_dump($L_Id);
+            $flag='Add New';
+          } while(!empty($ID));
+        } else {$L_Id=$uniq; 
+            $flag='No Add'; 
+            
+        }
+        var_dump('Flag   is  :'.$flag);
+          if($flag==''){
+            //Already exists in DB
+            //$this->session->set_flashdata('msg','Application Already Exists !!!'); 
+          var_dump($L_Id);
+           var_dump('Flag is  '.$flag);
+           // redirect('General');
+          }
+          $this->session->set_flashdata('msg',''); 
 
-        
+        $Application_Licenses =array(
+          'L_Id'=> $L_Id,
+          'Application'=>'General License',
+          'email'=> $email,
+          'Status'=>'New',
+        );
       
-     
+        $this->session->set_userdata('L_Id', $L_Id);
+
         $data=$this->input->post();
         $personal=array_slice($data,0,13);
         $registration=array_slice($data,13,4);
@@ -44,45 +69,64 @@ class General extends CI_Controller
         $H_Education=array_slice($data,24,4);
         $experience=array_slice($data,28,7);
         $Special_Qualification=array_slice($data,35,1);
-        var_dump(  $Special_Qualification);
-        $H_Id_Array =array(
-          'H_ID' => $H_Id,
+        $Special_Qualification;
+        $L_Id_Array =array(
+          'L_ID' => $L_Id,
           'email' => $email,
           
         );
-        $H_Id_Array1 =array(
-          'H_ID' => $H_Id,         
+        $L_Id_Array1 =array(
+          'L_Id' => $L_Id,         
           
         );
+        if($flag=='Add New'){
+        $personal=   array_merge($personal,$L_Id_Array);
+        $H_Education=   array_merge($H_Education,$L_Id_Array1);
+        $registration=   array_merge($registration,$L_Id_Array1);
+        $speciality=   array_merge($speciality,$L_Id_Array1);
+        $identification=   array_merge($identification,$L_Id_Array1);
+        $experience=   array_merge($experience,$L_Id_Array1);
+        $Special_Qualification=   array_merge($Special_Qualification,$L_Id_Array1);
       
-        $personal=   array_merge($personal,$H_Id_Array);
-        $H_Education=   array_merge($H_Education,$H_Id_Array1);
-        $registration=   array_merge($registration,$H_Id_Array1);
-        $speciality=   array_merge($speciality,$H_Id_Array1);
-        $identification=   array_merge($identification,$H_Id_Array1);
-        $experience=   array_merge($experience,$H_Id_Array1);
-        $Special_Qualification=   array_merge($Special_Qualification,$H_Id_Array1);
-    
-
-     $res= $this->db_functions->addNewOrUpdate('H_PersonalDetails','H_Id',$H_Id,$personal);
-     $res= $this->db_functions->addNewOrUpdate('H_Medical_Registration','H_Id',$H_Id,$registration);
-     $res= $this->db_functions->addNewOrUpdate('H_Speciality','H_Id',$H_Id,$speciality);
-     $res= $this->db_functions->addNewOrUpdate('H_Identification','H_Id',$H_Id,$identification);
-     $res= $this->db_functions->addNewOrUpdate('H_Education','H_Id',$H_Id,$H_Education);
-     $res= $this->db_functions->addNewOrUpdate('H_Experience','H_Id',$H_Id,$experience);
-    $res= $this->db_functions->addNewOrUpdate('H_Special_Qualification','H_Id',$H_Id,$Special_Qualification);
+        $res= $this->db_functions->addNewOrUpdate('Application_Licenses','L_Id',$L_Id, $Application_Licenses);
+        $res= $this->db_functions->addNewOrUpdate('L_PersonalDetails','L_Id',$L_Id,$personal);
+      //  $res= $this->db_functions->addNewOrUpdate('L_Medical_Registration','L_Id',$L_Id,$registration);
+      //  $res= $this->db_functions->addNewOrUpdate('L_Speciality','L_Id',$L_Id,$speciality);
+      //  $res= $this->db_functions->addNewOrUpdate('L_Identification','L_Id',$L_Id,$identification);
+      //  $res= $this->db_functions->addNewOrUpdate('L_Education','L_Id',$L_Id,$H_Education);
+      //  $res= $this->db_functions->addNewOrUpdate('L_Experience','L_Id',$L_Id,$experience);
+      //  $res= $this->db_functions->addNewOrUpdate('L_Special_Qualification','L_Id',$L_Id,$Special_Qualification);
+        $this->session->set_flashdata('msg','Application Inserted !!!'); 
+      }
+   
          // var_dump($res);
-        //select H_Documents
-        // select H_Education
-        // select H_Experience
-        // select H_Identification
-        // select H_Medical_Registration
-        // select H_Payment
-        // select H_PersonalDetails
-        // select H_Speciality
-        // select H_Special_Qualification         
-         redirect('General' );
+         //Tables
+        //select L_Documents
+        // select L_Education
+        // select L_Experience
+        // select L_Identification
+        // select L_Medical_Registration
+        // select L_Payment
+        // select L_PersonalDetails
+        // select L_Speciality
+        // select L_Special_Qualification         
+       //var_dump($res);
+      redirect('General');
          
+    }
+
+    public function getData(){
+      $field='L_ID';
+      $value=$this->session->userdata('L_Id');
+      $personal=  $this->db_functions->getByID('L_PersonalDetails',$field,$value);
+      $Education=   $this->db_functions->getByID('L_Education',$field,$value);
+      $registration=   $this->db_functions->getByID('L_Medical_Registration',$field,$value);
+      $speciality=   $this->db_functions->getByID('L_Speciality',$field,$value);
+      $identification=   $this->db_functions->getByID('L_Identification',$field,$value);
+      $experience=   $this->db_functions->getByID('L_Experience',$field,$value);
+      $Special_Qualification=   $this->db_functions->getByID('L_Special_Qualification',$field,$value);
+      $data=array_merge($personal,$Education, $registration, $speciality, $identification, $experience,$Special_Qualification );
+      //var_dump($data);
     }
      
   }

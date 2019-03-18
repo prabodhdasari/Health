@@ -1,6 +1,6 @@
 
 <?php
- include("includes/header.php");
+ $this->load->view('includes/header.php');
 ?>
  
     <!-- Breadcrumb End -->

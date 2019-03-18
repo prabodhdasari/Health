@@ -6,7 +6,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title> <?php echo $this->session->userdata('page');?></title>
+   <style>
+  .box input,.box textarea {
+        padding: 10px 0;
+        margin-bottom: 0px;
+    }
+
+    .box input,.box textarea {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        border-bottom: 0px solid grey;
+    }
+
+    .box  {
+        position: relative;
+    }
+
+    .box label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: grey;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+    .box input:focus~label,
+    .box input:valid~label ,
+    .box textarea:focus~label,
+    .box textarea:valid~label 
+    {
+        top: -12px;
+        left: 0;
+        color: #246df8;
+    }
+
+    .box input:focus,
+    .box input:valid,
+    .box textarea:focus,
+    .box textarea:valid
+     {
+        border-bottom: 1px solid #246df8;
+    }
+    
+  </style>
   <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" type="text/css"  href="css/main.css">  -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- External Css -->
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
@@ -20,7 +68,7 @@
   <link rel="stylesheet" href="assets/css/jquery.nstSlider.min.css">
   <link rel="stylesheet" href="assets/css/html5-simple-date-input-polyfill.css">
   <!-- Custom Css -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css"  href="css/main.css"> 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7CRoboto:300i,400,500" rel="stylesheet">
   <!-- Favicon -->
@@ -28,10 +76,61 @@
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/icon-114x114.png">
+  <style>
+  .custom-control-label::after, .custom-control-label::before
+    {
+      left:-2.5rem;
+      height:2rem;
+      width:2rem;
+    }</style>
   <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+    <!-- <style>
+    
+     
+    input.box  {
+        padding: 10px 0;
+        margin-bottom: 0px;
+    }
+
+    input.box  {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        border-bottom: 0px solid grey;
+    }
+
+    form > div.row > input.box  {
+        position: relative;
+    }
+
+    form > div.row > label  {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: grey;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+    .box input:focus~label,
+    .box input:valid~label {
+        top: -12px;
+        left: 0;
+        color: #246df8;
+    }
+
+    .box input:focus,
+    .box input:valid {
+        border-bottom: 1px solid #246df8;
+    }
+     
+    
+    </style> -->
 </head>
 <body>
   <header class="header-2">
@@ -157,7 +256,14 @@
             </nav>
           </div>
         </div>
-      
+        <!-- <div class="col-md-6">
+          <div class="breadcrumb-form">
+            <form action="#">
+              <input type="text" placeholder="Enter Keywords">
+              <button><i data-feather="search"></i></button>
+            </form>
+          </div>
+        </div> -->
       </div>
     </div>
   </div>

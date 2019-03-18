@@ -13,6 +13,7 @@ class home extends CI_Controller
     }
     public function index()
     {
+        
         $this->session->set_userdata('page', 'home');
          
         // set array of items in session

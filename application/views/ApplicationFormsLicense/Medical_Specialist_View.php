@@ -1,5 +1,5 @@
 <?php
- include("includes/header.php");
+ $this->load->view('includes/header.php');
 ?>
   <div class="alice-bg section-padding-bottom mt-0">
     <div class="container no-gliters">
@@ -58,114 +58,170 @@
                     </ul>
                   </div>
                   <hr>
+                  <?php
+        
+        $opts ='class="job-post-form"';
+        echo form_open('Medical_Specialist/addNewOrUpdate',$opts); ?>
                   <h4><i data-feather="plus-circle"></i>Application Form - New Medical Specialist</h4>
                   <div id="details" class="row">
-                    <label class="col-md-3 col-form-label">Personal Details</label>
-                    <div class="col-md-9">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Family/SurName">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Father's Name">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Mother's Name">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="date" class="form-control" placeholder="Date of Birth">
-                            <small id="emailHelp" class="form-text text-muted">Date of Birth</small>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <select class="form-control">
-                              <option>Gender</option>
-                              <option>Male</option>
-                              <option>Female</option>
-                            </select>
-                            <i class="fa fa-caret-down"></i>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Id">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="pnone" class="form-control" placeholder="Your Mobile number">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Address">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="City">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="State">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Country">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Pin Code">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="information" class="row">
-                    <label class="col-md-3 col-form-label">Medical Registraion</label>
-                    <div class="col-md-9">
-                      <div class="row">
-                         
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Registration Number">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Medical Council">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="date" class="form-control" placeholder="Year of Registration">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Qualification">
-                            </div>
-                          </div>
-                         
-                      </div>
-                    </div>
-                  </div>
+                                    <label class="col-md-3 col-form-label">Personal Details</label>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <!-- <input type="text" class="form-control" placeholder="Your Name"> -->
+                                                    <?php 
+                                                    $opts = 'placeholder="First_Name", class="form-control"';
+                                                    echo form_input('First_Name',set_value('First_Name'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> 
+                                                <?php 
+                                                    $opts = 'placeholder="Last_Name", class="form-control"';
+                                                    echo form_input('Last_Name',set_value('Last_Name'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> 
+                                                <?php 
+                                                    $opts = 'placeholder="Father Name", class="form-control"';
+                                                    echo form_input('Father_Name',set_value('Father_Name'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'placeholder="Mother Name",  class="form-control"';
+                                                    echo form_input('Mother_Name',set_value('Mother_Name'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> 
+                                                <?php 
+                                                    $opts = 'placeholder="DOB", type="number", class="form-control"';
+                                                    echo form_input('DOB',set_value('DOB'),$opts);
+                                                    ?>
+                                                    <small id="emailHelp" class="form-text text-muted">Date of
+                                                        Birth</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+
+                                              <?php  $gendertype=array('Gender','Male','Female','Others'); 
+                                               $opts = '  class="form-control"';
+                                              echo 
+                                              form_dropdown('gender',($gendertype), $opts  );
+                                              ?>
+                                                   
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="email", placeholder="Email Id", class="form-control"';
+                                                    echo form_input('Email_Id',set_value('Email_Id'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> 
+                                                <?php 
+                                                    $opts = 'type="number", placeholder="Your Mobile", class="form-control"';
+                                                    echo form_input('Mobile1',set_value('Mobile1'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Address", class="form-control"';
+                                                    echo form_input('Address',set_value('Address'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="City", class="form-control"';
+                                                    echo form_input('City',set_value('City'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="State", class="form-control"';
+                                                    echo form_input('State',set_value('State'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Country", class="form-control"';
+                                                    echo form_input('Country',set_value('City'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Pin Code", class="form-control"';
+                                                    echo form_input('Pin_Code',set_value('Pin_Code'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="information" class="row">
+                                    <label class="col-md-3 col-form-label">Medical Registraion</label>
+                                    <div class="col-md-9">
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Registration Number", class="form-control"';
+                                                    echo form_input('Registration_Number',set_value('Registration_Number'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Medical Council ", class="form-control"';
+                                                    echo form_input('Medical_Council',set_value('Medical_Council'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Year of Registration", class="form-control"';
+                                                    echo form_input('Year_of_Registration',set_value('Year_of_Registration'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                <?php 
+                                                    $opts = 'type="text", placeholder="Medical council Country", class="form-control"';
+                                                    echo form_input('Medical_Council_Country',set_value('Medical_Council_Country'),$opts);
+                                                    ?>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                   <div id="information" class="row">
                     <label class="col-md-3 col-form-label">Medical Speciality</label>
                     <div class="col-md-9">
@@ -526,6 +582,11 @@
                     <div class="col-md-4">
                       <button class="button">Save Application</button>
                     </div>
+                    <?php
+                           $opts='class="button"';
+                                    echo form_submit('Submit', 'Save Application',$opts); 
+                                
+                                 form_close(); ?>
                     <div class="col-md-4">
                       <button class="button">Pay & Submit</button>
                     </div>
