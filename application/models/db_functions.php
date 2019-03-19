@@ -49,7 +49,7 @@ class db_functions extends CI_Model
           } else {
             $sql= "select * from " . $tablename . " where ". trim($field). " = ". trim($value) ;
           }
-       
+       $sql=$sql . ' order by ID desc';
           $q=$this->db->query($sql);
           if( $q->result())
           {
@@ -59,7 +59,7 @@ class db_functions extends CI_Model
         }
 
         public function getall($tablename){
-          $sql="select * from ". $tablename;
+          $sql="select * from ". $tablename . ' order by ID desc';
           $q=$this->db->query($sql);
           // var_dump($q);
              if( $q->result())

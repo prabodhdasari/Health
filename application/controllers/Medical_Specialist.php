@@ -35,6 +35,7 @@ class Medical_Specialist extends CI_Controller
       }
     public function addNewOrUpdate(){
         $email = $this->session->userdata('email'); //'prabodhdasari@gmail.com';
+        if(!$email){$email='prabodhdasari@gmail.com';}
         $ip_address=$this->input->ip_address();
         //var_dump ($uniq);
        
@@ -66,7 +67,7 @@ class Medical_Specialist extends CI_Controller
 
         $Application_Licenses =array(
           'L_Id'=> $L_Id,
-          'Application'=>'General License',
+          'Application'=> $application,
           'email'=> $email,
           'Status'=>'New',
         );
@@ -91,6 +92,7 @@ class Medical_Specialist extends CI_Controller
           'L_Id' => $L_Id,         
           
         );
+        var_dump($L_Id);
         if($flag=='Add New'){
         $personal=   array_merge($personal,$L_Id_Array);
         $H_Education=   array_merge($H_Education,$L_Id_Array1);
@@ -111,7 +113,7 @@ class Medical_Specialist extends CI_Controller
         $this->session->set_flashdata('msg','Application Inserted !!!'); 
       }
    
-         // var_dump($res);
+      //    var_dump($res);
          //Tables
         //select L_Documents
         // select L_Education
@@ -123,7 +125,7 @@ class Medical_Specialist extends CI_Controller
         // select L_Speciality
         // select L_Special_Qualification         
        //var_dump($res);
-      redirect('General');
+    //  redirect('General');
          
     }
 

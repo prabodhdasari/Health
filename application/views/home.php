@@ -98,7 +98,8 @@
                   </div>
                 </div> -->
                 <?php
-                $this->session->sess_destroy();
+                if(!$this->session->userdata('email')){ $this->session->sess_destroy();}
+               
                 if($this->session->flashdata('message'))
                 {
                     echo '
