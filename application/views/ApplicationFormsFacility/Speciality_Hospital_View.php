@@ -1,5 +1,5 @@
 <?php
-include("../includes/header.php");
+ $this->load->view('includes/header.php');
 ?>
 <!-- Breadcrumb End -->
 
@@ -1334,8 +1334,10 @@ include("../includes/header.php");
                         </form>
                     </div>
                     <?php
-                        include("includes/leftmenu.php");
-                        ?>
+//include("includes/leftmenu.php");
+$this->load->view('includes/leftmenu.php');
+//include('/includes/leftmenu.php');
+?>
                 </div>
             </div>
         </div>
@@ -1470,5 +1472,7 @@ include("../includes/header.php");
 </div>
 <!-- Footer -->
 <?php
-    include("includes/footer.php");
-    ?>
+ //include("includes/footer.php");
+ //include('includes/footer.php');
+ $this->load->view('includes/footer.php');
+?>
