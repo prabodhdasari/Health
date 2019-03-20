@@ -76,7 +76,7 @@
                                     </div>
                                 </div> -->
                                 <div id="details" class="row ">
-                                    <label class="col-md-3 col-form-label">Group Details (if any)</label>
+                                    <label class="col-md-3 col-form-label">Company/Group Details</label>
                                     <div class="col-md-9 box">
                                         <div class="row ">
                                          <div class="col-md-12">
@@ -88,7 +88,7 @@
                                             <div class="col-md-12">
                                             <div class="form-group ">
                                                 <input type="text" class="form-control" name="" required="">
-                                                <label>Group Name</label>
+                                                <label>Company/Group Name</label>
                                             </div>
                                             </div>
                                             
@@ -161,7 +161,7 @@
 
                                 </div>
                                 <div id="information" class="row ">
-                                    <label class="col-md-3 col-form-label">Address</label>
+                                    <label class="col-md-3 col-form-label">New Hospital Address</label>
                                     <div class="col-md-9 box">
                                         <div class="row">
                                             <div class="col-md-12">
