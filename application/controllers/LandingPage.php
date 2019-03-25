@@ -24,7 +24,7 @@ class LandingPage extends CI_Controller
                 'User_Role' => 'Admin',
                 'interests' => array('tennis', 'travelling')
         );
-        $this->session->set_userdata($arraydata);
+       // $this->session->set_userdata($arraydata);
         $this->load->view('LandingPage_view.php');
     }
 }
