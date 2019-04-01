@@ -93,36 +93,40 @@
                                             </div>
                                             
                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Registered Address">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Registered Address</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="City">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>City</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="State">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>State</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Country">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Country</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Zip/Pin Code">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Zip/Pin Code</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Registration Number">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Registration Number</label>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -139,22 +143,22 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Proposed Name 2">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Proposed Name 2</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Proposed Name 3">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Proposed Name 3</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Abreviation if any">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Abbreviation if any</label>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -171,24 +175,28 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="City">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>City</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="State">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>State</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Country">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Country</label>
+                                            </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Zip/Pin Code">
-                                                </div>
+                                            <div class="form-group ">
+                                                <input type="text" class="form-control" name="" required="">
+                                                <label>Zip/Pin Code</label>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
