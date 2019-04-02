@@ -67,41 +67,54 @@
                                     <label class="col-md-3 col-form-label">Group Details (if any)</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Group Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
+                                            <div class="col-md-12 box">
+                                            <div class="form-group">
                                                     <input type="text" class="form-control"
-                                                        placeholder="Registered Address">
+                                                       name="" required="">
+                                                       <label >Group Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-12 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="City">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Registered Address</label>
+                                                        
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="State">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >City</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Country">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >State</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Zip/Pin Code">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Country</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Registration Number">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Zip/Pin Code</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 box">
+                                                <div class="form-group">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Registration Number</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -111,30 +124,31 @@
                                     <label class="col-md-3 col-form-label">New Speciality Hospital Details</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Proposed Name 1">
+                                                    <input type="text" name="" required="" class="form-control">
+                                                    <label>Proposed Name 1</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Proposed Name 2">
+                                                    <input type="text" name="" required="" class="form-control">
+                                                    <label>Proposed Name 2</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Proposed Name 3">
+                                                    <input type="text" name="" required="" class="form-control">
+                                                    <label>Proposed Name 3</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Abreviation if any">
+                                                    <input type="text" name="" required="" class="form-control">
+                                                    <label>Abreviation if any</label>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
 
@@ -143,29 +157,34 @@
                                     <label class="col-md-3 col-form-label">Address</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-12">
+                                        <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Address">
+                                                    <input type="text" name="" required="" class="form-control">
+                                                    <label>Address</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="City">
+                                                <input type="text" name="" required="" class="form-control">
+                                                    <label>City</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="State">
+                                                <input type="text" name="" required="" class="form-control">
+                                                    <label>State</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Country">
+                                                <input type="text" name="" required="" class="form-control">
+                                                    <label>Country</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Zip/Pin Code">
+                                                <input type="text" name="" required="" class="form-control">
+                                                    <label>Zip/Pin Code</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -517,7 +536,7 @@
                                     <label class="col-md-3 col-form-label">Area of the Facility</label>
                                     <div class="col-md-9">
                                         <div class="row mt-0">
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 box">
                                                 <div class="table">
                                                     <table class="table responsive">
                                                         <thead>
@@ -655,7 +674,7 @@
                                     <label class="col-md-3 col-form-label">Beds</label>
                                     <div class="col-md-9">
                                         <div class="row mt-0">
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 box">
                                                 <div class="table">
                                                     <table class="table responsive">
                                                         <thead>
@@ -697,7 +716,7 @@
                                                     </table>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control"
                                                         placeholder="Total Licensed Beds">
@@ -707,92 +726,98 @@
                                             this hospital location:
                                             This count is not included in the licensed bed count above and will not
                                             affect fees. A minimum of one bed is required
-                                            <div class="col-md-3">
+                                            <div class="col-md-3 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder=" Emergency  ">
-                                                    <small id="emailHelp" class="form-text text-muted"> Emergency
-                                                        treatment room beds </small>
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Emergency</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-3 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="  Medical/Surgical ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Medical/Surgical</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder=" ICU/CCU ">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>ICU/CCU</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="  Postpartum">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Postpartum</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Intermediate Care ">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Intermediate Care</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder=" Adolescent  ">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Adolescent</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder=" Universal Care ">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Universal Care</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder=" Pediatric ">
-                                                    <small id="emailHelp" class="form-text text-muted">if 15 or more
-                                                        beds</small>
+
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Pediatric</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="  Neonatal ICU  ">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Neonatal ICU</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder=" Skilled Nursing ">
+
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Skilled Nursing</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Continuing Care Nursing ">
+
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Continuing Care </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="  Antepartum ">
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Antepartum</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder=" Labor ">
-                                                    <small id="emailHelp"
-                                                        class="form-text text-muted">Labor/Delivery/Recovery/Postpartum</small>
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Labor/Postpartum</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder=" Chemical Dependency ">
+                                            
+                                            <div class="col-md-3 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Burns</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder=" Burns Beds ">
+                                            <div class="col-md-6 box">
+                                                <div class="form-group ">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Clinical Dependency</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -803,16 +828,19 @@
                                     <label class="col-md-3 col-form-label">Functional Brief</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 box">
                                                 <div class="form-group">
                                                     <textarea class="form-control"
-                                                        placeholder="Describe your Clinical Services"></textarea>
+                                                        name="" required=""></textarea>
+                                                        <label>Describe your Clinical Services</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 box">
                                                 <div class="form-group">
-                                                    <textarea class="form-control"
-                                                        placeholder="Tell us about your Patient Treatment Programs"></textarea>
+                                                <textarea class="form-control"
+                                                        name="" required=""></textarea>
+                                                        <label>Tell us about your Patient Treatment Programs</label>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -821,27 +849,30 @@
                                 <div id="details" class="row">
                                     <label class="col-md-3 col-form-label">Staff Plan</label>
                                     <div class="col-md-9">
-                                        <div class="row">
-                                            <div class="col-md-6">
+                                    <div class="row">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control"
-                                                        placeholder="Number of Physicians">
+                                                    <input type="number" class="form-control" name="" required="">
+                                                    <label>Number of Physicians</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control" placeholder="Nurses">
+                                                    <input type="number" class="form-control" name="" required="">
+                                                    <label>Number of Nurses</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control"
-                                                        placeholder="Allied Health Professionals">
+                                                    <input type="number" class="form-control" name="" required="">
+                                                    <label  >Allied Health Professionals</label>
+                                                         
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control" placeholder="Others">
+                                                    <input type="number" class="form-control" name="" required="">
+                                                    <label  >Others</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-3  ">
@@ -1228,78 +1259,84 @@
                                 </div>
                                 <div id="cv" class="row form-group">
                                     <label class="col-md-3 col-form-label">Management</label>
-                                    <div class="col-md-9">
+                                    <div class="col-md-9 box">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Applicant First Name">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label>Applicant First Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Applicant Last Name">
+                                                    <input type="text" class="form-control" name="" required=""
+                                                        >
+                                                        <label for="">Applicant Last Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Applicant Mobile">
+                                                    <input type="text" class="form-control" name="applicantMobile" required=""
+                                                       ><label for="applicantMobile">Applicant Mobile</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Applicant Email">
+                                                    <input type="email" class="form-control"
+                                                        name="" required=""><label >Applicant Email</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Medical Director  First Name">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label >Medical Director First Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control"
-                                                        placeholder="Medical Director  Last Name">
+                                                        name="" required=""><label >Medical Director Last Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Medical Director  Mobile">
+                                                    <input type="text" class="form-control" name="" required="">
+                                                    <label > Medical Director Mobile</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Medical Director  email">
+                                                    <input type="email" class="form-control"
+                                                        name="" required="">
+                                                        <label >Medical Director Email</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control"
-                                                        placeholder="Facility Manager  First Name">
+                                                       name="" required="">
+                                                       <label >Facility Manage First Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Facility   Last Name">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Facility Manager Last Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Facility Manager  Mobile">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Facility Mobile</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Facility   email">
+                                                <input type="text" class="form-control"
+                                                       name="" required="">
+                                                       <label >Facility  Email</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -1379,25 +1416,25 @@ $this->load->view('includes/leftmenu.php');
                 </div>
                 <div class="modal-body">
                     <form action="#">
-                        <div class="col-md-12">
+                        <div class="col-md-12 box">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="text" class="form-control"
                                             placeholder="Degree/Diploma/Certificate">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="University/Institute">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="number" class="form-control" placeholder="Year of Passing">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Registration/Roll Number">
                                     </div>
@@ -1427,31 +1464,31 @@ $this->load->view('includes/leftmenu.php');
                 </div>
                 <div class="modal-body">
                     <form action="#">
-                        <div class="col-md-12">
+                        <div class="col-md-12 box">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Company Name">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Designation">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 box">
                                     <div class="form-group">
                                         <input type="date" class="form-control" placeholder="Start Date">
                                         <small id="emailHelp" class="form-text text-muted">Start Date</small>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 box">
                                     <div class="form-group">
                                         <input type="date" class="form-control" placeholder="End Date">
                                         <small id="emailHelp" class="form-text text-muted">End Date</small>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 box">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Full Address">
                                     </div>
