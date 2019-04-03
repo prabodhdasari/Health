@@ -80,50 +80,49 @@
                                     <label class="col-md-3 col-form-label">Personal Details</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
-                                                    <!-- <input type="text" class="form-control" placeholder="Your Name"> -->
-                                                    <?php 
-                                                    $opts = 'placeholder="First_Name", class="form-control"';
+                                                                                                      <?php 
+                                                    $opts = 'required="", class="form-control"';
                                                     echo form_input('First_Name',set_value('First_Name'),$opts);
-                                                    ?>
+                                                    ?><label>First Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group"> 
                                                 <?php 
-                                                    $opts = 'placeholder="Last_Name", class="form-control"';
+                                                    $opts = 'required="", class="form-control"';
                                                     echo form_input('Last_Name',set_value('Last_Name'),$opts);
-                                                    ?>
+                                                    ?><label> Last Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group"> 
                                                 <?php 
-                                                    $opts = 'placeholder="Father Name", class="form-control"';
+                                                    $opts = 'required="", class="form-control"';
                                                     echo form_input('Father_Name',set_value('Father_Name'),$opts);
-                                                    ?>
+                                                    ?><label>Father's Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'placeholder="Mother Name",  class="form-control"';
+                                                     $opts = 'required="",class="form-control"';
                                                     echo form_input('Mother_Name',set_value('Mother_Name'),$opts);
-                                                    ?>
+                                                    ?><label>Mother's Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group"> 
                                                 <?php 
-                                                    $opts = 'placeholder="DOB", type="number", class="form-control"';
+                                                     $opts = 'required="", class="form-control"';
                                                     echo form_input('DOB',set_value('DOB'),$opts);
-                                                    ?>
-                                                    <small id="emailHelp" class="form-text text-muted">Date of
-                                                        Birth</small>
+                                                    ?><label>Date of Birth</label>
+                                                    <!-- <small id="emailHelp" class="form-text text-muted">Date of
+                                                        Birth</small> -->
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
 
                                               <?php  $gendertype=array('Gender','Male','Female','Others'); 
@@ -135,60 +134,60 @@
                                                     <i class="fa fa-caret-down"></i>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="email", placeholder="Email Id", class="form-control"';
+                                                    $opts = 'required="", class="form-control", type="email"';
                                                     echo form_input('Email_Id',set_value('Email_Id'),$opts);
-                                                    ?>
+                                                    ?><label>Email ID</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group"> 
                                                 <?php 
-                                                    $opts = 'type="number", placeholder="Your Mobile", class="form-control"';
+                                                     $opts = 'required="", class="form-control", type="number",';
                                                     echo form_input('Mobile1',set_value('Mobile1'),$opts);
-                                                    ?>
+                                                    ?><label>Mobile</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Address", class="form-control"';
+                                                    $opts = 'required="", class="form-control"';
                                                     echo form_input('Address',set_value('Address'),$opts);
-                                                    ?>
+                                                    ?><label>Address</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="City", class="form-control"';
+                                                      $opts = 'required="", class="form-control"';
                                                     echo form_input('City',set_value('City'),$opts);
-                                                    ?>
+                                                    ?><label>City</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="State", class="form-control"';
+                                                    $opts = 'required="", class="form-control", type="text" ';
                                                     echo form_input('State',set_value('State'),$opts);
-                                                    ?>
+                                                    ?><label>State</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Country", class="form-control"';
+                                                     $opts = 'required="",  class="form-control", type="text",';
                                                     echo form_input('Country',set_value('City'),$opts);
-                                                    ?>
+                                                    ?><label>Country</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Pin Code", class="form-control"';
+                                                     $opts = 'required="", class="form-control", type="text"';
                                                     echo form_input('Pin_Code',set_value('Pin_Code'),$opts);
-                                                    ?>
+                                                    ?><label>Zip/Pin Code</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -199,36 +198,36 @@
                                     <div class="col-md-9">
                                         <div class="row">
 
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Registration Number", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Registration_Number',set_value('Registration_Number'),$opts);
-                                                    ?>
+                                                    ?><label for="">Registration Number</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Medical Council ", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Medical_Council',set_value('Medical_Council'),$opts);
-                                                    ?>
+                                                    ?><label for="">Medical Council</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Year of Registration", class="form-control"';
+                                                    $opts = 'type="number", required="", class="form-control"';
                                                     echo form_input('Year_of_Registration',set_value('Year_of_Registration'),$opts);
-                                                    ?>
+                                                    ?><label for="">Year of Registration</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Medical council Country", class="form-control"';
+                                                    $opts = 'type="text", required="",  class="form-control"';
                                                     echo form_input('Medical_Council_Country',set_value('Medical_Council_Country'),$opts);
-                                                    ?>
+                                                    ?> <label for="">Medical Council Country</label>
                                                 </div>
                                             </div>
 
@@ -239,7 +238,7 @@
                                     <label class="col-md-3 col-form-label">Medical Speciality</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 box">
                                                 <div class="form-group">
                                              <?php   
                                              $speciality=array('Select Speciality','General Medicine','General Dentistry'); 
@@ -259,56 +258,54 @@
                                     <label class="col-md-3 col-form-label">Identification Details</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Passport Number", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Passport_Number',set_value('Passport_Number'),$opts);
-                                                    ?>
+                                                    ?><label for="">Passport Number</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Country of Issuance", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Passport_Country',set_value('Passport_Country'),$opts);
-                                                    ?>
+                                                    ?><label for="">Country of issuance</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Date of Issuance", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Passport_Issue_Date',set_value('Passport_Issue_Date'),$opts);
-                                                    ?>
-                                                    <small id="emailHelp" class="form-text text-muted">Date of
-                                                        Issue</small>
+                                                    ?><label for="">Issue Date </label>
+                                                   
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Date of Expiry", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Passport_Expiry_Date',set_value('Passport_Expiry_Date'),$opts);
-                                                    ?>
-                                                    <small id="emailHelp" class="form-text text-muted">Date of
-                                                        Expiry</small>
+                                                    ?><label for="">Expiry Date</label>
+                                                  
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Nationial ID  / Adhaar Id", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('National_Id',set_value('National_Id'),$opts);
-                                                    ?>
+                                                    ?><label for=""> Nationial ID  / Adhaar Id </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" PAN ID / Tax Card Number", class="form-control"';
+                                                    $opts = 'type="text", required="",  class="form-control"';
                                                     echo form_input('Tax_Number',set_value('Tax_Number'),$opts);
-                                                    ?>
+                                                    ?><label for=""> PAN ID / Tax Card Number</label>
                                                         
                                                 </div>
                                             </div>
@@ -327,39 +324,39 @@
                                     <label class="col-md-3 col-form-label">Education</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder= "Degree/Certificate/Diploma", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Name_Degree',set_value('Name_Degree'),$opts);
                                                     ?>
-                                                         
+                                                        <label >Name of Degree/Certificate</label> 
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder= "University/Institute", class="form-control"';
+                                                   $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('University',set_value('University'),$opts);
-                                                    ?>
+                                                    ?><label for="">University</label>
                                                     
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="  Year of passing", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Passing_Year',set_value('Passing_Year'),$opts);
-                                                    ?>
+                                                    ?><label for="">Year of Passing</label>
                                                     
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" RollNumber", class="form-control"';
+                                                   $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('RollNumber',set_value('RollNumber'),$opts);
-                                                    ?>
+                                                    ?><label for="">Roll Number</label>
                                                     
                                                     <small id="text" class="form-text text-muted">Admission number or
                                                         Roll number</small>
@@ -382,7 +379,7 @@
                                     </div>
                                     <!-- <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
                                                     $opts = 'type="text", placeholder= "Degree/Certificate/Diploma", class="form-control"';
@@ -391,7 +388,7 @@
                                                          
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
                                                     $opts = 'type="text", placeholder= "University/Institute", class="form-control"';
@@ -400,7 +397,7 @@
                                                     
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
                                                     $opts = 'type="text", placeholder="  Year of passing", class="form-control"';
@@ -409,7 +406,7 @@
                                                     
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
                                                     $opts = 'type="text", placeholder=" RollNumber", class="form-control"';
@@ -442,63 +439,81 @@
                                     <label class="col-md-3 col-form-label">Experiance</label>
                                     <div class="col-md-9">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" Company Name", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Company_Name',set_value('Company_Name'),$opts);
-                                                    ?>       </div>
+                                                    ?>    <label for="">Company Name</label>
+                                                       </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" Designation", class="form-control"';
+                                                   $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Designation',set_value('Designation'),$opts);
-                                                    ?>     
+                                                    ?>     <label for="">Designation</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-3 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" Start Date", class="form-control"';
+                                                  $opts = 'type="date", required="", class="form-control"';
                                                     echo form_input('Start_date',set_value('Start_date'),$opts);
-                                                    ?> 
-                                                    <small id="date" class="form-text text-muted">Start Date</small>
-                                                </div>
+                                                    ?> <label for="">Start Date</label>
+                                                         </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-3 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder=" End Date", class="form-control"';
+                                                  $opts = 'type="date", required="", class="form-control"';
                                                     echo form_input('End_date',set_value('End_date'),$opts);
-                                                    ?> 
-                                                    <small id="text" class="form-text text-muted">End Date</small>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group"> 
-                                                <?php 
-                                                    $opts = 'type="text", placeholder=" Address", class="form-control"';
-                                                    echo form_input('Exp_Address',set_value('Exp_Address'),$opts);
-                                                    ?> 
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                <?php 
-                                                    $opts = 'type="text", placeholder=" City", class="form-control"';
-                                                    echo form_input('Exp_City',set_value('Exp_City'),$opts);
-                                                    ?> 
+                                                    ?> <label for="">End Date</label>
                                                     
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 box">
                                                 <div class="form-group">
                                                 <?php 
-                                                    $opts = 'type="text", placeholder="Country", class="form-control"';
+                                                   $opts = 'type="text", required="", class="form-control"';     
+                                                   echo form_input('Exp_WebSite',set_value('Exp_WebSite'),$opts);
+                                                    ?> <label for="">Website</label>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 box">
+                                                <div class="form-group"> 
+                                                <?php 
+                                                    $opts = 'type="text", required="", class="form-control"';
+                                                    echo form_input('Exp_Address',set_value('Exp_Address'),$opts);
+                                                    ?> <label for="">Company Address</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 box">
+                                                <div class="form-group">
+                                                <?php 
+                                                   $opts = 'type="text", required="", class="form-control"';     
+                                                   echo form_input('Exp_City',set_value('Exp_City'),$opts);
+                                                    ?> <label for="">City</label>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 box">
+                                                <div class="form-group">
+                                                <?php 
+                                                   $opts = 'type="text", required="", class="form-control"';     
+                                                   echo form_input('Exp_State',set_value('Exp_State'),$opts);
+                                                    ?> <label for="">State</label>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 box">
+                                                <div class="form-group">
+                                                <?php 
+                                                 $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Exp_Country',set_value('Exp_Country'),$opts);
-                                                    ?> 
+                                                    ?> <label for="">Country</label>
                                                     
                                                 </div>
                                             </div>
@@ -523,12 +538,12 @@
                                 <div id="qualification" class="row">
                                     <label class="col-md-3 col-form-label">Special Qualifications</label>
                                     <div class="col-md-9">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 box">
                                             <div class="form-group">
                                             <?php 
-                                                    $opts = 'type="text", placeholder="Special Qualification", class="form-control"';
+                                                    $opts = 'type="text", required="", class="form-control"';
                                                     echo form_input('Special_Qualification',set_value('Special_Qualification'),$opts);
-                                                    ?> 
+                                                    ?> <label for="">Special Qualification</label>
 
                                             </div>
                                         </div>
