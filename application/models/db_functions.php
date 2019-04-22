@@ -86,16 +86,47 @@ class db_functions extends CI_Model
           $q=$this->db->query($sql);
           
           if($q->num_rows()>0)
-          {
-            $row = $q->row();
-            if(isset($row))
             {
-              return $row->L_ID;
-            } else {
-              return '';
-            }
-          }
-         
+              $row = $q->row();
+              if(isset($row))
+                  {
+                    return $row->L_ID;
+                  } else
+                  {
+                    return '';
+                  }
+            }       
+
+        }
+    //This function is to get the uique Clinical ID
+        public function generateH_ID($H_ID){
+          $sql="select * from Application_Clinics where H_ID ='". $H_ID . "'";
+          $q=$this->db->query($sql);
+          if( $q->result())
+          {
+           return $q->result();
+           } 
+        }
+        public function checkForNewClinicApplication($email,$application)
+        {
+          $sql='select * from Application_Clinics where status = "New"';
+          $sql = $sql . ' and email ="'. $email .'"';
+          $sql = $sql . ' and Application = "'. $application .'"';
+          var_dump('Sql query' . $sql);
+       //   email="'. $email . '" and status<>"New"'. ' and Application="'. $application. '"';
+          $q=$this->db->query($sql);
+          
+          if($q->num_rows()>0)
+            {
+              $row = $q->row();
+              if(isset($row))
+                  {
+                    return $row->H_ID;
+                  } else
+                  {
+                    return '';
+                  }
+            }        
 
         }
 }

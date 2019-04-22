@@ -91,7 +91,7 @@
                                             <div class="col-md-6 box">
                                                 <div class="form-group"> 
                                                 <?php 
-                                                    $opts = 'required="", class="form-control"';
+                                                    $opts = 'required ="", class="form-control"';
                                                     echo form_input('Last_Name',set_value('Last_Name'),$opts);
                                                     ?><label> Last Name</label>
                                                 </div>

@@ -8,7 +8,7 @@
             <div class="col">
                 <div class="post-container">
                     <div class="post-content-wrapper">
-                        <form action="#" class="job-post-form">
+                        <!-- <form action="#" class="job-post-form"> -->
                             <div class="basic-info-input ">
                                 <div class="dropdown header-top-account login-modals md-12">
                                     <button title="Title" type="button" data-toggle="collapse"
@@ -74,7 +74,11 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <div id="details" class="row ">
+                                <?php
+        
+        $opts ='class="job-post-form"';
+        echo form_open('General_Hospital/addNewOrUpdate',$opts); ?>
+                                <div id="details" class="row  job-post-form"">
                                     <label class="col-md-3 col-form-label">Company/Group Details</label>
                                     <div class="col-md-9 box">
                                         <div class="row ">
@@ -1139,10 +1143,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group row m-1 offset-md-3">
-                                    <label class="col-md-9 col-form-label  "></label>
-                                    <div class="col-md-3 m-2">
-                                        <button class="button">Save Application</button>
-                                    </div>
+                                <?php
+                                      
+                                      $opts='class="button", col-md-3 m-2';
+                                      echo form_submit('Submit', 'Save Application',$opts); 
+                                  
+                                   form_close();
+  ?>
                                     <div class="col-md-3 m-2">
                                         <button class="button">Print Application</button>
                                     </div>
@@ -1151,7 +1158,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                         
                     </div>
                     <?php
 //include("includes/leftmenu.php");

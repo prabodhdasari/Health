@@ -42,7 +42,7 @@ class General extends CI_Controller
             $flag='No Add'; 
             
         }
-        var_dump('Flag   is  :'.$flag);
+       // var_dump('Flag   is  :'.$flag);
           if($flag==''){
             //Already exists in DB
             //$this->session->set_flashdata('msg','Application Already Exists !!!'); 
